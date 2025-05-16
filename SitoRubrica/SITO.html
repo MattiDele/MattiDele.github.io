@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubrica Smart</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #2c3e50;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+        .hero {
+            background: linear-gradient(135deg, #2980b9, #8e44ad);
+            padding: 60px 20px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(52, 152, 219, 0.3);
+            transition: all 0.3s ease-in-out;
+        }
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 0;
+        }
+        .btn {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 12px 25px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(231, 76, 60, 0.5);
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(231, 76, 60, 0.7);
+        }
+        .dark-mode {
+            background: #1a1a1a;
+            color: #ffffff;
+        }
+        .dark-mode .hero {
+            background: linear-gradient(135deg, #444, #00adb5);
+            box-shadow: 0px 6px 15px rgba(0, 173, 181, 0.3);
+        }
+        nav {
+            background: #222;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #e74c3c;
+        }
+        .features {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .feature-box {
+            background: #e74c3c;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            box-shadow: 0px 5px 15px rgba(231, 76, 60, 0.5);
+            transition: transform 0.3s;
+        }
+        .feature-box:hover {
+            transform: scale(1.1);
+        }
+        .section {
+            margin: 50px 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+        }
+        .feedback-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 50%;
+            margin: auto;
+        }
+        .feedback-form input, .feedback-form textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <a class="nav-link" href="index.html">Dashboard</a>
+        <a class="nav-link" href="dettagli.html">Dettagli</a>
+    </nav>
+    <div class="hero">
+        <h1>Rubrica Smart</h1>
+        <p>Gestisci i tuoi contatti con stile e velocità.</p>
+        <button class="btn" onclick="toggleTheme()">Cambia Tema</button>
+    </div>
+    
+    <div class="features">
+        <div class="feature-box">📞 Aggiungi Contatti</div>
+        <div class="feature-box">🔍 Cerca Contatti</div>
+        <div class="feature-box">📌 Mantieni tutto in ordine</div>
+    </div>
+
+    <div class="section">
+        <h2>Chi Siamo</h2>
+        <p>La tua rubrica digitale, sempre con te! Gestisci i tuoi contatti in modo semplice ed efficace.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Guida Rapida</h2>
+        <p>Scopri come aggiungere, modificare e cercare i tuoi contatti con facilità.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Feedback e Suggerimenti</h2>
+        <form class="feedback-form">
+            <input type="text" placeholder="Il tuo nome" required>
+            <textarea placeholder="Lascia un suggerimento" required></textarea>
+            <button class="btn" type="submit">Invia Feedback</button>
+        </form>
+    </div>
+    
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle("dark-mode");
+            document.getElementById("navbar").classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>

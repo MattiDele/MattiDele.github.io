@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Ordinamento e Controlli</title>
+  <style>
+    body {
+      background-color: #1d1b2a;
+      color: #ded6f3;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      color: #b892ff;
+      font-size: 28px;
+    }
+    .box {
+      background-color: #292640;
+      border-left: 5px solid #a970ff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    ul {
+      line-height: 1.7;
+    }
+    .btn-home {
+      display: inline-block;
+      padding: 12px 24px;
+      background: linear-gradient(145deg, #a970ff, #7b5ac3);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px #b892ff;
+      margin-top: 25px;
+    }
+    .btn-home:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #dabfff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ordinamento e Controlli della Rubrica</h1>
+
+  <div class="box">
+    <h2>📋 Ordinamento Automatico</h2>
+    <p>La rubrica mantiene tutti i contatti ordinati per facilitare la ricerca e la gestione. L’ordine predefinito è il seguente:</p>
+    <ul>
+      <li><strong>Nome</strong> </li>
+      <li><strong>Cognome</strong> </li>
+      <li><strong>Email</strong> come ulteriore criterio secondario</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>🔐 Controlli sui Dati Inseriti</h2>
+    <p>Per garantire la qualità dei dati e prevenire errori, vengono eseguiti controlli su ogni campo:</p>
+    <ul>
+      <li><strong>Recapito:</strong> può contenere <u>solo numeri</u>. Caratteri non numerici non sono accettati.</li>
+      <li><strong>Email:</strong> deve essere valida. Sono obbligatori i simboli <code>@</code> e <code>.</code> (es. nome@email.com).</li>
+      <li>Campi vuoti o incompleti vengono bloccati e l’utente viene avvisato.</li>
+    </ul>
+  </div>
+
+  <a href="index.html" class="btn-home">⬅ Torna alla Home</a>
+  <p class="footer">&copy; Rubrica GUI.</p>
+</body>
+</html>

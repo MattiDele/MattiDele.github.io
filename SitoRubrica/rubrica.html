@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubrica - Download</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #1e1e2e;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+        }
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            background: #282a36;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 105, 180, 0.5);
+        }
+        h1 {
+            color: #ff79c6;
+        }
+        .section {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .download-btn {
+            display: inline-block;
+            background: #ff5555;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            position: relative;
+            transition: background 0.3s;
+        }
+        .download-btn:hover {
+            background: #ff79c6;
+        }
+        .download-btn::after {
+            content: '\2192';
+            font-size: 24px;
+            margin-left: 10px;
+            color: yellow;
+        }
+        .info {
+            font-size: 18px;
+            color: #f8f8f2;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #bbbbbb;
+        }
+        a.btn-home {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="btn-home"><h1>Rubrica</h1></a>
+        
+        <div class="section">
+            <h2>Descrizione</h2>
+            <p class="info">La nostra rubrica ti permette di salvare contatti in modo semplice e veloce. Con pochi passaggi, puoi aggiungere, modificare e cancellare i tuoi contatti con estrema facilità.</p>
+            <p class="info">Inoltre, è presente una funzionalità avanzata di ricerca che ti consente di trovare rapidamente i contatti salvati, migliorando la tua esperienza d'uso.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Chi l'ha creata</h2>
+            <p class="info">Sviluppata da: <strong>Fabio Colangelo, Francesco Tolla, Mattia De Leonardis, Giovanni Mauro, Ivan Parente</strong></p>
+        </div>
+        
+        <div class="section">
+            <h2>Scarica l'App</h2>
+            <a href="Rubrica-GUI.zip" download class="download-btn">DOWNLOAD</a>
+        </div>
+        
+        <div class="section">
+            <h2>Contattaci</h2>
+            <p class="info">Se hai dubbi o domande, non esitare a contattarci:</p>
+            <p class="info"><strong>Email:</strong> <a href="mailto:Mattiadeleonardis2007@gmail.com" style="color: #ff79c6;">Mattiadeleonardis2007@gmail.com</a></p>
+        </div>
+        
+        <p class="footer">&copy; Rubrica GUI.</p>
+    </div>
+</body>
+</html>
